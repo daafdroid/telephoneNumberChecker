@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
@@ -9,22 +9,134 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText1"
         android:name="editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Type Here"
-        android:inputType="phone"
+        android:hint="@string/typeHere"
         android:textColor="@color/orange">
 
         <requestFocus />
-    </EditText>
+    </TextView>
 
     <Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/btnText"
+    android:onClick="onClick" />
+
+
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2"
+       >
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/A"
+
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btnText"
-        android:onClick="onClick" />
+        android:text="1"
 
-</LinearLayout>
+        android:onClick="passNumber" />
+    <Button
+        android:id="@+id/B"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+
+
+        android:text="2"
+        android:onClick="passNumber" />
+    <Button
+        android:id="@+id/C"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:text="3"
+        android:onClick="passNumber" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2"
+        >
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/D"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:onClick="passNumber" />
+    <Button
+        android:id="@+id/E"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:onClick="passNumber" />
+    <Button
+        android:id="@+id/F"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:onClick="passNumber" />
+        </TableRow>
+    </TableLayout>
+            <TableLayout
+                android:id="@+id/tableLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1,2"
+                >
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/G"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:onClick="passNumber" />
+    <Button
+        android:id="@+id/H"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:onClick="passNumber" />
+    <Button
+        android:id="@+id/I"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:onClick="passNumber" />
+                </TableRow>
+            </TableLayout>
+    <Button
+        android:id="@+id/J"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:onClick="passNumber" />
+    <Button
+        android:id="@+id/K"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:onClick="passNumber" />
+
+
+
+</TableLayout>
