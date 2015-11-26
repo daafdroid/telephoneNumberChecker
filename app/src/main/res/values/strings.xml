@@ -8,4 +8,6 @@
     <string name="action_settings">Settings</string>
     <string name="number_valid">This number is valid</string>
     <string name="number_invalid">This number is invalid</string>
+    <string name="Welcome">Welcome</string>
+    <string name="welcome">Welcome</string>
 </resources>

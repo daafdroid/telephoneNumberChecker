@@ -54,4 +54,4 @@
         android:onClick="onClick"
         android:text="@string/btnCancel" />
 
-</RelativeLayout><!-- From: file:/C:/Users/davinator/Desktop/Applications%20for%20mobile%20devices/WS2-HelloWorld2/app/src/main/res/layout-land/secondscreen2.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Steven/AndroidStudioProjects/telephoneNumberChecker/app/src/main/res/layout-land/secondscreen2.xml -->
