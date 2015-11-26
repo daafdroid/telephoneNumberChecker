@@ -39,6 +39,34 @@ public class MainActivity1 extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void passNumber(View view)
+    {
+        TextView theTextView = (TextView) findViewById(R.id.editText1);
+        if(view.getId()==R.id.A)
+            theTextView.setText(theTextView.getText()+"1");
+        if(view.getId()==R.id.B)
+            theTextView.setText(theTextView.getText()+"2");
+        if(view.getId()==R.id.C)
+            theTextView.setText(theTextView.getText()+"3");
+        if(view.getId()==R.id.D)
+            theTextView.setText(theTextView.getText()+"4");
+        if(view.getId()==R.id.E)
+            theTextView.setText(theTextView.getText()+"5");
+        if(view.getId()==R.id.F)
+            theTextView.setText(theTextView.getText()+"6");
+        if(view.getId()==R.id.G)
+            theTextView.setText(theTextView.getText()+"7");
+        if(view.getId()==R.id.H)
+            theTextView.setText(theTextView.getText()+"8");
+        if(view.getId()==R.id.I)
+            theTextView.setText(theTextView.getText()+"9");
+        if(view.getId()==R.id.J)
+            theTextView.setText(theTextView.getText()+"+");
+        if(view.getId()==R.id.K)
+            theTextView.setText(theTextView.getText()+"0");
+
+    }
+
     public void onClick(View view) {
         //called from button click
 
