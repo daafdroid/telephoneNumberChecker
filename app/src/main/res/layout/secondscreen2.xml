@@ -2,50 +2,79 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="1">
 
-    <TextView
-        android:id="@+id/enterNumberText"
-        android:name="enterNumberText"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Entered phonenumber:"
-        android:textSize="16sp" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/enterNumberTextValue"
-        android:name="enterNumberTextValue"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="16sp" />
+        <TextView
+            android:text="@string/enteredNumber"
+            android:id="@+id/enterNumberText"
+            android:name="enterNumberText"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:textSize="16sp"
+            android:gravity="left"/>
 
-    <TextView
-        android:id="@+id/validNumberText"
-        android:name="enterNumberTextValue"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/number_invalid"
-        android:textColor="@color/red23"
-        android:textSize="16sp" />
+        <TextView
+            android:id="@+id/enterNumberTextValue"
+            android:name="enterNumberTextValue"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="Entered number"
+            android:textSize="16sp"
+            android:gravity="right"
+            android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Region code for this number:" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/regionCodeText"
-        android:name="tvText"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="No region code found"
-        android:textColor="@color/darkpurple"
-        android:textSize="24sp" />
+        <TextView
+            android:id="@+id/validNumberText"
+            android:name="tvText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/number_invalid"
+            android:textColor="@color/red23"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp" />
 
-    <Button
-        android:layout_width="fill_parent"
+        <TextView
+            android:id="@+id/regionCodeText"
+            android:name="tvText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="No region code found"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btnCancel"
-        android:onClick="onClick" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="435dp">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnCancel"
+            android:onClick="onClick" />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buttontext"
+            android:id="@+id/button"
+            android:onClick="realCall" />
+
+    </LinearLayout>
+
 </LinearLayout>

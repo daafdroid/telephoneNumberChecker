@@ -35,16 +35,17 @@ public final class R {
         public static final int ic_launcher=0x7f020002;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a000a;
+        public static final int action_settings=0x7f0a000b;
+        public static final int button=0x7f0a0005;
         public static final int editText1=0x7f0a0000;
         public static final int enterNumberText=0x7f0a0001;
         public static final int enterNumberTextValue=0x7f0a0002;
-        public static final int imageView=0x7f0a0009;
+        public static final int imageView=0x7f0a000a;
         public static final int regionCodeText=0x7f0a0004;
-        public static final int textView=0x7f0a0008;
-        public static final int textView1=0x7f0a0005;
-        public static final int textView2=0x7f0a0006;
-        public static final int tvText=0x7f0a0007;
+        public static final int textView=0x7f0a0009;
+        public static final int textView1=0x7f0a0006;
+        public static final int textView2=0x7f0a0007;
+        public static final int tvText=0x7f0a0008;
         public static final int validNumberText=0x7f0a0003;
     }
     public static final class layout {
@@ -56,15 +57,16 @@ public final class R {
         public static final int main_activity1=0x7f090000;
     }
     public static final class string {
-        public static final int Welcome=0x7f080000;
-        public static final int action_settings=0x7f080001;
-        public static final int app_name=0x7f080002;
-        public static final int btnCancel=0x7f080003;
-        public static final int btnText=0x7f080004;
-        public static final int hello_world=0x7f080005;
-        public static final int number_invalid=0x7f080006;
-        public static final int number_valid=0x7f080007;
-        public static final int welcome=0x7f080008;
+        public static final int action_settings=0x7f080000;
+        public static final int app_name=0x7f080001;
+        public static final int btnCancel=0x7f080002;
+        public static final int btnText=0x7f080003;
+        public static final int buttontext=0x7f080004;
+        public static final int enteredNumber=0x7f080005;
+        public static final int hello_world=0x7f080006;
+        public static final int number_invalid=0x7f080007;
+        public static final int number_valid=0x7f080008;
+        public static final int welcome=0x7f080009;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 

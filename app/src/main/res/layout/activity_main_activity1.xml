@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1">
 
     <TextView
         android:layout_width="fill_parent"
@@ -16,15 +18,27 @@
         android:layout_height="wrap_content"
         android:hint="Type Here"
         android:inputType="phone"
-        android:textColor="@color/orange">
+        android:textColor="@color/orange"
+        android:singleLine="false"
+        android:phoneNumber="false"
+        android:selectAllOnFocus="false"
+        android:enabled="true"
+        android:focusable="true"
+        android:autoText="false"
+        android:editable="false"
+        android:textIsSelectable="false"
+        android:focusableInTouchMode="true">
 
         <requestFocus />
     </EditText>
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="359dp"
         android:layout_height="wrap_content"
         android:text="@string/btnText"
-        android:onClick="onClick" />
+        android:onClick="onClick"
+        android:background="#a7abab"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp" />
 
 </LinearLayout>
